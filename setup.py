@@ -26,6 +26,8 @@ setup(name='genweb.stack',
       install_requires=[
           'setuptools',
           # -*- Extra requirements: -*-
+          'Products.LinguaPlone',
+          'plone.app.discussion'
       ],
       entry_points="""
       # -*- Entry points: -*-
@@ -33,6 +35,4 @@ setup(name='genweb.stack',
       [z3c.autoinclude.plugin]
       target = plone
       """,
-      setup_requires=["PasteScript"],
-      paster_plugins=["ZopeSkel"],
       )
