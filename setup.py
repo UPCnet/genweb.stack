@@ -5,7 +5,7 @@ version = '1.0'
 
 setup(name='genweb.stack',
       version=version,
-      description="",
+      description="Genweb generic stack of products",
       long_description=open("README.txt").read() + "\n" +
                        open(os.path.join("docs", "HISTORY.txt")).read(),
       # Get more strings from
@@ -27,7 +27,16 @@ setup(name='genweb.stack',
           'setuptools',
           # -*- Extra requirements: -*-
           'Products.LinguaPlone',
-          'plone.app.discussion'
+          'plone.app.discussion',
+          'Products.PloneFormGen',
+          'Products.Collage',
+          'Products.Ploneboard',
+          'Products.Poi',
+          'Products.windowZ',
+          'Products.PlonePopoll',
+          # Experimental GW4
+          'collective.collage.ploneformgen',
+          'pfg.drafts',
       ],
       entry_points="""
       # -*- Entry points: -*-
