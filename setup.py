@@ -37,6 +37,7 @@ setup(name='genweb.stack',
           # Experimental GW4
           'collective.collage.ploneformgen',
           'pfg.drafts',
+          'collective.recaptcha',
       ],
       entry_points="""
       # -*- Entry points: -*-
