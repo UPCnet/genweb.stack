@@ -28,6 +28,7 @@ setup(name='genweb.stack',
           # -*- Extra requirements: -*-
           'Products.LinguaPlone',
           'plone.app.discussion',
+          'plone.app.caching',
           'Products.PloneFormGen',
           'Products.Collage',
           'Products.Ploneboard',
