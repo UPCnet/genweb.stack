@@ -39,6 +39,7 @@ setup(name='genweb.stack',
           'collective.collage.ploneformgen',
           'pfg.drafts',
           'collective.recaptcha',
+          'collective.tinymcetemplates',
       ],
       entry_points="""
       # -*- Entry points: -*-
