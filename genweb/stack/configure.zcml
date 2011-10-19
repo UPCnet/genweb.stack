@@ -5,15 +5,15 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="genweb.stack">
 
-  <five:registerPackage package="." initialize=".initialize" />
-
-  <genericsetup:registerProfile
+<!-- El paquet no necesita inicialitzacio ni ser instalat -->
+<!-- <five:registerPackage package="." initialize=".initialize" /> -->
+<!--   <genericsetup:registerProfile
       name="default"
       title="genweb.stack"
       directory="profiles/default"
       description="Installs the genweb.stack package"
       provides="Products.GenericSetup.interfaces.EXTENSION"
-      />
+      /> -->
   <!-- -*- extra stuff goes here -*- -->
   
 </configure>
