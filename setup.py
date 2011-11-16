@@ -38,6 +38,7 @@ setup(name='genweb.stack',
           'collective.collage.ploneformgen',
           'pfg.drafts',
           'collective.recaptcha',
+          'plone.formwidget.recaptcha',
           'collective.tinymcetemplates',
       ],
       entry_points="""
