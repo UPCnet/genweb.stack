@@ -5,15 +5,23 @@
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     i18n_domain="genweb.stack">
 
-<!-- El paquet no necesita inicialitzacio ni ser instalat -->
-<!-- <five:registerPackage package="." initialize=".initialize" /> -->
-<!--   <genericsetup:registerProfile
+    <!-- Compat with Plone 4.1 -->
+    <include package="Products.CMFCore" file="permissions.zcml" />
+
+    <includeDependencies package="." />
+
+    <!-- Redefinitions to make test pass -->
+    <include package="Products.CMFPlacefulWorkflow" />
+    <include package="jarn.jsi18n" />
+
+    <include file="subscribers.zcml" />
+
+    <genericsetup:registerProfile
       name="default"
-      title="genweb.stack"
+      title="Genweb UPC Product Stack"
       directory="profiles/default"
-      description="Installs the genweb.stack package"
+      description="Genweb UPC official product stack."
       provides="Products.GenericSetup.interfaces.EXTENSION"
-      /> -->
-  <!-- -*- extra stuff goes here -*- -->
-  
+      />
+
 </configure>

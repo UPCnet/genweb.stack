@@ -1,0 +1,19 @@
+<configure
+    xmlns="http://namespaces.zope.org/zope"
+    xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
+    i18n_domain="genweb.stack"
+    >
+
+    <includeDependencies package="genweb.stack" />
+
+  	<genericsetup:registerProfile
+    	name="testing"
+      	title="genweb.stack"
+      	description="genweb.stack testing profile"
+      	directory="profile"
+      	provides="Products.GenericSetup.interfaces.EXTENSION"
+      	for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+    />
+
+</configure>
+
