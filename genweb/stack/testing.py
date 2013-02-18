@@ -25,6 +25,8 @@ class GenwebUPCStack(PloneSandboxLayer):
                        context=configurationContext)
 
         # Install archetypes-based products
+        z2.installProduct(app, 'upc.genweb.banners')
+        z2.installProduct(app, 'upc.genweb.logosfooter')
         z2.installProduct(app, 'Products.PloneFormGen')
         z2.installProduct(app, 'Products.Collage')
         z2.installProduct(app, 'Products.PlonePopoll')
@@ -51,6 +53,8 @@ class GenwebUPCStack(PloneSandboxLayer):
 
     def tearDownZope(self, app):
         # Uninstall archetypes-based products
+        z2.uninstallProduct(app, 'upc.genweb.banners')
+        z2.uninstallProduct(app, 'upc.genweb.logosfooter')
         z2.uninstallProduct(app, 'Products.PloneFormGen')
         z2.uninstallProduct(app, 'Products.Collage')
         z2.uninstallProduct(app, 'Products.PlonePopoll')

@@ -32,6 +32,8 @@ setup(name='genweb.stack',
       install_requires=[
           'setuptools',
           'genweb.packets',
+          'upc.genweb.banners',
+          'upc.genweb.logosfooter',
           'upc.genweb.meetings',
           'upc.genweb.serveis',
           'upc.genweb.descriptorTIC',
