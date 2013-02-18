@@ -78,18 +78,6 @@ class IntegrationTest(unittest.TestCase):
         f1.invokeFactory('ObjectiuGeneralCG', 'objectiuGeneralCG', title=u"Soc una objectiuGeneralCG")
         self.assertEqual(f1['objectiuGeneralCG'].Title(), u"Soc una objectiuGeneralCG")
 
-    def testFolderConstrains(self):
-        from genweb.stack.events import CONSTRAINED_TYPES, IMMEDIATELY_ADDABLE_TYPES
-        from zope.event import notify
-        from Products.Archetypes.event import ObjectInitializedEvent
-        setRoles(self.portal, TEST_USER_ID, ['Manager'])
-        login(self.portal, TEST_USER_NAME)
-        self.portal.invokeFactory('Folder', 'userfolder', title=u"Soc una carpeta")
-        folder = self.portal['userfolder']
-        notify(ObjectInitializedEvent(folder))
-        self.assertEqual(sorted(folder.getLocallyAllowedTypes()), sorted(CONSTRAINED_TYPES))
-        self.assertEqual(sorted(folder.getImmediatelyAddableTypes()), sorted(IMMEDIATELY_ADDABLE_TYPES))
-
     # Worked, but it stopped working when refactor the independence of genweb.core from the rest of the stack
     # def test_migrateSecciotype(self):
     #     z2.installProduct(self.layer['app'], 'Products.LinguaPlone')
