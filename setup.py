@@ -55,7 +55,6 @@ setup(name='genweb.stack',
           'Products.PloneSurvey',
           'Products.DataGridField',
           # Experimental GW4
-          'Solgema.fullcalendar',
           'collective.pfg.dexterity',
           'collective.collage.ploneformgen',
           'pfg.drafts',
