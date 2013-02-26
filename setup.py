@@ -60,7 +60,6 @@ setup(name='genweb.stack',
           'pfg.drafts',
           # 'collective.recaptcha',
           'plone.formwidget.recaptcha',
-          'collective.tinymcetemplates',
           # To extinct
           'upc.genwebupc',
           'upc.genwebupctheme',

@@ -15,7 +15,6 @@
     <dependency>profile-Products.PloneSurvey:default</dependency>
     <dependency>profile-upc.genweb.meetings:default</dependency>
     <dependency>profile-upcnet.simpleTask:default</dependency>
-    <dependency>profile-collective.tinymcetemplates:default</dependency>
     <dependency>profile-pfg.drafts:default</dependency>
     <dependency>profile-plone.formwidget.recaptcha:default</dependency>
     <dependency>profile-genweb.packets:default</dependency>
