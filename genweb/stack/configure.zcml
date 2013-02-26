@@ -10,6 +10,8 @@
 
     <includeDependencies package="." />
 
+    <include package=".browser" />
+
     <!-- Redefinitions to make test pass -->
     <include package="Products.CMFPlacefulWorkflow" />
     <include package="jarn.jsi18n" />

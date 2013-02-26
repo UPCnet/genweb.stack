@@ -1,0 +1,57 @@
+<configure xmlns="http://namespaces.zope.org/zope"
+           xmlns:zcml="http://namespaces.zope.org/zcml"
+           xmlns:browser="http://namespaces.zope.org/browser">
+
+  <browser:page
+     name="inheritFolder"
+     for="Products.ATContentTypes.content.folder.ATFolder"
+     permission="zope.Public"
+     class=".collage.InheritFolderView"
+     layer="Products.Collage.interfaces.ICollageBrowserLayer"
+     />
+
+  <browser:page
+     name="summary"
+     for="Products.ATContentTypes.content.folder.ATFolder"
+     permission="zope.Public"
+     template="templates/folder_summary_view.pt"
+     class=".collage.SummaryFolderView"
+     layer="Products.Collage.interfaces.ICollageBrowserLayer"
+     />
+
+  <browser:page
+     name="fullview"
+     for="Products.ATContentTypes.content.folder.ATFolder"
+     permission="zope.Public"
+     template="templates/folder_full_view.pt"
+     class=".collage.FullFolderView"
+     layer="Products.Collage.interfaces.ICollageBrowserLayer"
+     />
+
+  <browser:page
+     name="tabular"
+     for="Products.ATContentTypes.content.folder.ATFolder"
+     permission="zope.Public"
+     template="templates/folder_tabular_view.pt"
+     class=".collage.TabularFolderView"
+     layer="Products.Collage.interfaces.ICollageBrowserLayer"
+     />
+
+  <browser:page
+     name="album"
+     for="Products.ATContentTypes.content.folder.ATFolder"
+     permission="zope.Public"
+     template="templates/atct_album_view.pt"
+     class=".collage.AlbumFolderView"
+     layer="Products.Collage.interfaces.ICollageBrowserLayer"
+     />
+
+  <browser:page
+     name="extended"
+     for="Products.ATContentTypes.content.folder.ATFolder"
+     permission="zope.Public"
+     template="templates/folder_extended.pt"
+     class=".collage.ExtendedFolderView"
+     layer="Products.Collage.interfaces.ICollageBrowserLayer"
+     />
+</configure>
