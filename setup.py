@@ -58,7 +58,7 @@ setup(name='genweb.stack',
           'collective.pfg.dexterity',
           'collective.collage.ploneformgen',
           'pfg.drafts',
-          # 'collective.recaptcha',
+          'collective.recaptcha',
           'plone.formwidget.recaptcha',
           # To extinct
           'upc.genwebupc',
