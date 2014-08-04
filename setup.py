@@ -3,22 +3,22 @@ import os
 
 version = '1.0'
 
+README = open("README.rst").read()
+HISTORY = open(os.path.join("docs", "HISTORY.rst")).read()
+
 setup(name='genweb.stack',
       version=version,
       description="Genweb generic stack of products",
-      long_description=open("README.txt").read() + "\n" +
-                       open(os.path.join("docs", "HISTORY.txt")).read(),
-      # Get more strings from
-      # http://pypi.python.org/pypi?%3Aaction=list_classifiers
+      long_description=README + "\n" + HISTORY,
       classifiers=[
-        "Environment :: Web Environment",
-        "Framework :: Plone",
-        "Operating System :: OS Independent",
-        "Programming Language :: Python",
-        "Programming Language :: Python :: 2.6",
-        "Programming Language :: Python :: 2.7",
-        "Topic :: Software Development :: Libraries :: Python Modules",
-        ],
+          "Environment :: Web Environment",
+          "Framework :: Plone",
+          "Operating System :: OS Independent",
+          "Programming Language :: Python",
+          "Programming Language :: Python :: 2.6",
+          "Programming Language :: Python :: 2.7",
+          "Topic :: Software Development :: Libraries :: Python Modules",
+      ],
       keywords='',
       author='UPCnet Plone Team',
       author_email='plone.team@upcnet.es',
@@ -32,9 +32,13 @@ setup(name='genweb.stack',
       install_requires=[
           'setuptools',
           'genweb.packets',
+          'Products.PloneLDAP',
+          'Products.PloneFormGen',
+          'Products.Collage',
+          'Products.windowZ',
+          # To improve/migrate to dexterity
           'upc.genweb.banners',
           'upc.genweb.logosfooter',
-          'upc.genweb.meetings',
           'upc.genweb.serveis',
           'upc.genweb.descriptorTIC',
           'upc.genweb.kbpuc',
@@ -43,27 +47,25 @@ setup(name='genweb.stack',
           'upc.cloudPrivat',
           'upcnet.cas',
           'upcnet.stats',
-          'upcnet.simpleTask',
-          'Products.LinguaPlone',
-          'Products.PloneLDAP',
-          'Products.PloneFormGen',
-          'Products.Collage',
-          'Products.Ploneboard',
-          'Products.Poi',
-          'Products.windowZ',
-          'Products.PlonePopoll',
-          'Products.PloneSurvey',
-          'Products.DataGridField',
           # Experimental GW4
+          'collective.polls',
           'collective.pfg.dexterity',
           'collective.collage.ploneformgen',
           'pfg.drafts',
           'collective.recaptcha',
           'plone.formwidget.recaptcha',
-          # To extinct
-          'upc.genwebupc',
-          'upc.genwebupctheme',
-          'upc.genweb.recaptcha',
+          # Deprecated
+          # 'upc.genwebupc',
+          # 'upc.genwebupctheme',
+          # 'upc.genweb.recaptcha',
+          # 'Products.Poi',
+          # 'Products.PloneSurvey',
+          # 'Products.DataGridField',
+          # 'Products.Ploneboard',
+          # 'Products.LinguaPlone',
+          # 'upcnet.simpleTask',
+          # 'upc.genweb.meetings',
+          # 'Products.PlonePopoll',
       ],
       entry_points="""
       # -*- Entry points: -*-
