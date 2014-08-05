@@ -13,11 +13,6 @@
     <role name="WebMaster"/>
   </roles>
   <permissions>
-    <permission name="Banners: Add Banner" acquire="False">
-      <role name="Contributor"/>
-      <role name="Manager"/>
-      <role name="WebMaster"/>
-    </permission>
     <permission name="LogosFooter: Add Logos_Footer"
                 acquire="False">
       <role name="Contributor"/>

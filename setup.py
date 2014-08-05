@@ -38,8 +38,8 @@ setup(name='genweb.stack',
           'Products.windowZ',
           'upcnet.cas',
           'upcnet.stats',
+          'genweb.banners',
           # To improve/migrate to dexterity
-          'upc.genweb.banners',
           'upc.genweb.logosfooter',
           # Experimental GW4
           'collective.polls',
