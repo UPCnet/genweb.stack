@@ -13,12 +13,6 @@
     <role name="WebMaster"/>
   </roles>
   <permissions>
-    <permission name="LogosFooter: Add Logos_Footer"
-                acquire="False">
-      <role name="Contributor"/>
-      <role name="Manager"/>
-      <role name="WebMaster"/>
-    </permission>
     <permission name="Add Collage content" acquire="True">
       <role name="Contributor"/>
     </permission>

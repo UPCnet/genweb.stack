@@ -39,8 +39,7 @@ setup(name='genweb.stack',
           'upcnet.cas',
           'upcnet.stats',
           'genweb.banners',
-          # To improve/migrate to dexterity
-          'upc.genweb.logosfooter',
+          'genweb.logosfooter',
           # Experimental GW4
           'collective.polls',
           'collective.pfg.dexterity',
