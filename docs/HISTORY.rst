@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-2.0b2 (unreleased)
-------------------
+2.0 (2014-08-08)
+----------------
 
 - Nothing changed yet.
 
