@@ -2,17 +2,19 @@ Changelog
 =========
 
 
-2.1 (unreleased)
+2.1 (2014-09-16)
 ----------------
 
-- Nothing changed yet.
-
+* Install c.polls by default [Victor Fernandez de Alba]
+* New metadata column for open in new window [Victor Fernandez de Alba]
+* Deprecate upc.genweb.logosfooter [Victor Fernandez de Alba]
 
 2.0 (2014-08-08)
 ----------------
 
-- Nothing changed yet.
-
+* Install c.polls by default [Victor Fernandez de Alba]
+* New metadata column for open in new window [Victor Fernandez de Alba]
+* Deprecate upc.genweb.logosfooter [Victor Fernandez de Alba]
 
 2.0b1 (2014-08-07)
 ------------------
